@@ -5,20 +5,20 @@
 class Author < Formula
   desc ""
   homepage ""
-  version "0.0.9"
+  version "0.1.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/Pianoopera/author/releases/download/v0.0.9/author_Darwin_x86_64.tar.gz"
-      sha256 "94f404ee1eb9dbd88fb869e15d661d7c5738c41e4cb696436b01472b1a69c960"
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Darwin_x86_64.tar.gz"
+      sha256 "1f26f7bd961cecfd52600c5d720faeb6fd6e6f4958829c55fba1f8135165b2e8"
 
       def install
         bin.install "author"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/Pianoopera/author/releases/download/v0.0.9/author_Darwin_arm64.tar.gz"
-      sha256 "703998f492f1fb5f5e579efabd5237ad40ada5ed63b58c90dece20b56d728330"
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Darwin_arm64.tar.gz"
+      sha256 "2b558029c4a033f232f58ebef05333053576780a8b7918cdbd57c4a5cfe1ead3"
 
       def install
         bin.install "author"
@@ -28,16 +28,16 @@ class Author < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Pianoopera/author/releases/download/v0.0.9/author_Linux_arm64.tar.gz"
-      sha256 "251ebbba722f79ada29b6c4aaaa05854a59ffa151a7fa8b7681c455382af615b"
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Linux_arm64.tar.gz"
+      sha256 "008dc71669c0cbe7e71a27d3e0edbb6bdb377e64eba15a526ad16616131a08a5"
 
       def install
         bin.install "author"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Pianoopera/author/releases/download/v0.0.9/author_Linux_x86_64.tar.gz"
-      sha256 "9f5eaa07d74076c3574fbaf6908b2ead84a7768d1daade613598181006d863ea"
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Linux_x86_64.tar.gz"
+      sha256 "a62046dc1255a1069c87a9d328b0aa7445d9e86501e62d8d80bb558766424b35"
 
       def install
         bin.install "author"
