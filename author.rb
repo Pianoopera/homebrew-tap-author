@@ -5,20 +5,20 @@
 class Author < Formula
   desc ""
   homepage ""
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Darwin_x86_64.tar.gz"
-      sha256 "1f26f7bd961cecfd52600c5d720faeb6fd6e6f4958829c55fba1f8135165b2e8"
+    if Hardware::CPU.arm?
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.1/author_Darwin_arm64.tar.gz"
+      sha256 "ef08d8cd04e3cfb4dc5fd5c407f262ad8780226812b61ea7b34d103ed5f72725"
 
       def install
         bin.install "author"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Darwin_arm64.tar.gz"
-      sha256 "2b558029c4a033f232f58ebef05333053576780a8b7918cdbd57c4a5cfe1ead3"
+    if Hardware::CPU.intel?
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.1/author_Darwin_x86_64.tar.gz"
+      sha256 "594fecb48ba7b673769c9cf5bade29e9aaa101924172325b98efa9b51ed56f00"
 
       def install
         bin.install "author"
@@ -28,16 +28,16 @@ class Author < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Linux_arm64.tar.gz"
-      sha256 "008dc71669c0cbe7e71a27d3e0edbb6bdb377e64eba15a526ad16616131a08a5"
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.1/author_Linux_arm64.tar.gz"
+      sha256 "50d29fbf12eab7ec2ae9e8f25ce53d19356a02730332c41d3dec74e3da840cab"
 
       def install
         bin.install "author"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Pianoopera/author/releases/download/v0.1.0/author_Linux_x86_64.tar.gz"
-      sha256 "a62046dc1255a1069c87a9d328b0aa7445d9e86501e62d8d80bb558766424b35"
+      url "https://github.com/Pianoopera/author/releases/download/v0.1.1/author_Linux_x86_64.tar.gz"
+      sha256 "6bfb0d66c84f123807bdf144fedf2095fdb186caf83af8c5e48b94c17c99442f"
 
       def install
         bin.install "author"
