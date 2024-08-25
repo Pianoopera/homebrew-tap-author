@@ -13,7 +13,7 @@ class RfNotion < Formula
       sha256 "7f066aa32c954b26e8e1fbc954a0035e890e7fa742c167b715938ac7a1d50f83"
 
       def install
-        bin.install "rf-curl-v0.2.2-aarch64-apple-darwin" => "rf-curl"
+        bin.install "rf-notion-v0.2.2-aarch64-apple-darwin" => "rf-notion"
       end
     end
   end
