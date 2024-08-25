@@ -8,28 +8,9 @@ class RfNotion < Formula
   version "0.2.2"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/Pianoopera/request-format-for-notion/releases/download/v0.2.1/rf-notion-v0.2.1-x86_64-apple-darwin"
-      sha256 "78c391dfe6068073aa69e78ea38424662d1cd4d62f86df6c9ef485072124f2e8"
-
-      def install
-        bin.install "rf-notion"
-      end
-    end
     if Hardware::CPU.arm?
       url "https://github.com/Pianoopera/request-format-for-notion/releases/download/v0.2.1/rf-notion-v0.2.1-aarch64-apple-darwin"
-      sha256 "69de499bca23a25e4caedcb0576b8edae3d41f5cbe6bce68b417ed40f1a9ac14"
-
-      def install
-        bin.install "rf-notion"
-      end
-    end
-  end
-
-  on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Pianoopera/request-format-for-notion/releases/download/v0.2.1/rf-notion-v0.2.1-x86_64-unknown-linux-gnu"
-      sha256 "4882f4dffeea42b86ce1485ffd5dc43c338a7b2f8dc1da2fc4c04afa2d2116e2"
+      sha256 "ef9156ff1d2e5a09c146e768ef1dbb11955a54b94cc31e10d5868fa593ee501f"
 
       def install
         bin.install "rf-notion"
