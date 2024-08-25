@@ -5,15 +5,15 @@
 class RfNotion < Formula
   desc ""
   homepage ""
-  version "0.2.2"
+  version "0.2.3"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Pianoopera/request-format-for-notion/releases/download/v0.2.2/rf-notion-v0.2.2-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/Pianoopera/notion-swallow/releases/download/v0.2.3/notion-swallow-v0.2.3-aarch64-apple-darwin.tar.gz"
       sha256 "7f066aa32c954b26e8e1fbc954a0035e890e7fa742c167b715938ac7a1d50f83"
 
       def install
-        bin.install "rf-notion-v0.2.2-aarch64-apple-darwin" => "rf-notion"
+        bin.install "notion-swallow-v0.2.3-aarch64-apple-darwin" => "notion-swallow"
       end
     end
   end
