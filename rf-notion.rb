@@ -10,7 +10,7 @@ class RfNotion < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Pianoopera/request-format-for-notion/releases/download/v0.2.2/rf-notion-v0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "ef9156ff1d2e5a09c146e768ef1dbb11955a54b94cc31e10d5868fa593ee501f"
+      sha256 "7f066aa32c954b26e8e1fbc954a0035e890e7fa742c167b715938ac7a1d50f83"
 
       def install
         bin.install "rf-notion"
