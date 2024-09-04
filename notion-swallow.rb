@@ -5,7 +5,7 @@
 class NotionSwallow < Formula
   desc ""
   homepage ""
-  version "0.2.3"
+  version "0.3.1"
 
   on_macos do
     if Hardware::CPU.arm?
