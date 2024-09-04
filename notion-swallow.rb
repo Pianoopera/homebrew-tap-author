@@ -10,7 +10,7 @@ class NotionSwallow < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/Pianoopera/notion-swallow/releases/download/v0.3.2/notion-swallow-v0.3.2-aarch64-apple-darwin.tar.gz"
-      sha256 "3218911128c9e8716cbb09f46af948701a369c9cd18f599ab954f29cad3d0738"
+      sha256 "f173dd2b3aabed02e8e243ff713415f1fe1dd374e77df9a91235bee1362bf925"
 
       def install
         bin.install "notion-swallow-v0.3.2-aarch64-apple-darwin" => "notion-swallow"
